@@ -1,300 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Erin Kristine Pevan</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="css/modal-gallery.css">-->
-    <!--<script src="js/modal-gallery.js"></script>-->
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    /* Add smooth scrolling behavior with anchors */
-    #about {scroll-behavior: smooth;}
-    #portfolio {scroll-behavior: smooth;}
-    #contact {scroll-behavior: smooth;}
-    </style>
-  </head>
-<body class="w3-black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Link to your external CSS stylesheet (optional) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="images/profile/erin_001-01.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HJEM</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>OM</p>
-  </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PORTFØLJE</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>KONTAKT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HJEM</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">OM</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFØLJE</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">KONTAKT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1> Erin Kristine Pevan</h1>
-    <!--<p>Photographer and Web Designer.</p> 
-    <img src="images/profile/erin_001.jpg" alt="boy" class="w3-image" width="992" height="1108">
-    -->
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-     <!-- <h2 class="w3-text-light-grey">My Name</h2> -->
-    <hr style="width:400px" class="w3-opacity">
-    <p>
-      Utdannet antropolog og historiker med lang erfaring og faglig sterk innen formidling, digital dokumentasjon, markedsføring og webdesign. 
-      <br /><br />
-      Spesialisert på kreativ visualisering,   innholdsproduksjon og kommunikasjon gjennom innovative digitale løsninger, nettbaserte verktøy og IKT-programmering. Kompetanse inkluderer redaksjonelt arbeid, programmerings- og markeringsspråk (JavaScript, HTML, CSS), digital humaniora (3D-modellering og fotogrammetri), SEO, CMS-systemer og datavisualisering. 
-      <br /><br />
-      God erfaring med fotografering, bilderedigering, UI/UX design, kvantitativ og kvalitativ analyse, kunstig intelligens (KI) og pedagogiske tilnærminger.
-      <br /><br />
-      <p style="font-size:16px;">Språkferdigheter</p>
-      <ul>
-        <li>Norsk bokmål - Muntlig meget godt, skriftlig meget godt, B2 CEFR (høyere mellomnivå)</li>
-        <li>Engelsk - Morsmål</li>
-        <li>Fransk - Grunnleggende muntlig og skriftlig</li>
-      </ul>
-    </p>
-    
-    <!-- 
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-       
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-     -->
-
-    <!-- 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    -->
-  </div>
-  <!-- End About Section -->
-   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="portfolio">
-    <h2 class="w3-text-light-grey">Portfølje</h2>
-    <hr style="width:400px" class="w3-opacity" />
- 
-    <h4>Tekst</h4>
-      <p>
-        <p>Masteroppgaver
-          <ul>
-            <li><a href="https://eriukristene.github.io/clmsproject/" alt="Masteroppgave Michigan State University" target="_blank">Masteroppgave Michigan State University - 2017</a> (digital oppgave)</li>
-            <li><a href="https://www.duo.uio.no/handle/10852/70123" alt="Masteroppgave Universitetet i Oslo" target="_blank">Masteroppgave Universitetet i Oslo - 2019</a></li>
-          </ul>
-        </p>
-
-        <p>Aktuelle relevante skriveeksempler om samfunnssamarbeid, kampanjer, arrangementer og temaer innen populærkultur. Noen eksempler mangler det visuelle for YouTube-lenker, bruk fantasien til å visualisere en video der! 
-                <br />
-                Følgende eksempler på nettsider fra Outland AS eies av Outland AS: 
-
-                        <ul>
-                        <li>
-                        <a href="documents/ekp-Frank-Herberts-Dune-univers-vi-viser-deg-veien-inn-Outland.pdf" target="_blank"><i>Vi viser deg veien inn i Frank Herberts Dune</i></a>
-                        </li>
-                        
-                        <li>
-                        <a href="documents/ekp-Hvorfor-Haikerens-guide-til-galaksen-fortsatt-er-viktig-Outland.pdf" target="_blank"><i>Hvorfor The Hitchhiker’s Guide to the Galaxy
-fortsatt er viktig (og hvorfor du vil elske Towel Day)</i></a>
-                        </li>
-                        
-                        <li>
-                        <a href="documents/ekp-Don-Rosa-Signering-2025-Eksklusiv-Signering-hos-Outland-Outland.pdf" target="_blank"><i>Don Rosa besøkte Outland – slik opplevde
-fansen det!</i></a>
-                        </li>
-                        
-                        <li>
-                        <a href="documents/ekp-Outlands-samarbeid-med-Amnesty-International-i-Norge-Outland.pdf" target="_blank"><i>Outlands samarbeid med Amnesty International i Norge</i></a>
-                        </li>
-                        
-                        <li>
-                        <a href="documents/ekp-Pride-2025-Norges-største-feiring-av-mangfold-og-skeiv-kjærlighet-Outland.pdf" target="_blank"><i>Pride 2025: Norges største feiring av
-mangfold og skeiv kjærlighet</i></a>
-                        </li>
-                        
-                        <li>
-                        <a href="documents/ekp-RPG-day-Rollespilldagene-2025-hos-Outland-Outland.pdf" target="_blank"><i>Rollespilldagene 2025 hos Outland – Feir rollespill og fellesskap hele uken!</i></a>
-                        </li>
-                
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            </p>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is a simple paragraph describing the purpose of the site.</p>
+        </section>
+    </main>
 
- <!-- 
-        <p>Aktuelle relevante skriveeksempler om samfunnssamarbeid, kampanjer, arrangementer og temaer innen populærkultur (følgende eksempler på nettsider fra Outland AS eies av Outland AS)
-          <ul>
-            <li><a href="https://www.outland.no/miljo-samfunn/amnesty-international-i-norge" alt="Outlands samarbeid med Amnesty International i Norge" target="_blank">Outlands samarbeid med Amnesty International i Norge</a></li>
-            <li><a href="https://www.outland.no/merkedager/pride" alt="Pride 2025: Norges største feiring av mangfold og skeiv kjærlighet" target="_blank">Pride 2025: Norges største feiring av mangfold og skeiv kjærlighet</a></li>
-            <li><a href="https://www.outland.no/artikkel/guide-til-frank-herberts-dune-univers-film-boker" alt="Outlands guide til Frank Herberts Dune-univers" target="_blank">Outlands guide til Frank Herberts Dune-univers</a></li>
-            <li><a href="https://www.outland.no/arrangement/signering-don-rosa-i-bergen-og-oslo/" alt="Don Rosa besøkte Outland – slik opplevde fansen det" target="_blank">Don Rosa besøkte Outland – slik opplevde fansen det!</a></li>
-            <li><a href="https://www.outland.no/merkedager/free-rpg-day" alt="Rollespilldagene 2025 hos Outland – Feir rollespill og fellesskap hele uken" target="_blank">Rollespilldagene 2025 hos Outland – Feir rollespill og fellesskap hele uken!</a></li>
-            <li><a href="https://www.outland.no/artikkel/dont-panic-hitchhikers-guide-to-the-galaxy-douglas-adams-towel-day" alt="Hvorfor The Hitchhiker’s Guide to the Galaxy fortsatt er viktig og hvorfor du vil elske Towel Day" target="_blank">Hvorfor The Hitchhiker’s Guide to the Galaxy fortsatt er viktig (og hvorfor du vil elske Towel Day)</a></li>
-          </ul>
-        </p>
--->
-    
-        <p><a href="https://universitetetioslo.academia.edu/ErinPevan" target="_blank"> Academia.edu profil</a></p>
-        <p><a href="https://www.researchgate.net/profile/Erin-Pevan" target="_blank"> ResearchGate.net profil</a></p>
-      </p> 
-    
-    <br />
-    <h4>Digital humaniora</h4>
-      <p>
-        <p>Følgende er eksempler på mine nettbaserte digital humaniora prosjekter som bruker HTML-, CSS- og JavaScript-biblioteker. Disse testprosjektene benytter seg av bildegallerier, Google Maps APIer, interaktive visuelle kart og informasjon pop-ups, for å nevne noen eksempler.</p>
-        <ul>
-          <li><a href="https://eriukristene.github.io/norgesskoler" target="_blank"> Norges skoler:</a> En kartprøve som viser alle videregående skoler i Viken fylkeskommune i 2020</li>
-          <li><a href="https://eriukristene.github.io/wanuskewin-project" target="_blank"> WanuskewInteractive:</a> Et testnettsted for Cultural Heritage Informatics Initiative ved Michigan State University 2016-2017. Målet med dette prosjektet er å vise hvordan man kan tilby supplerende interaktivt digitalt innhold for kulturarvsinstitusjoner.</li>
-          <li>Det er mange flere JS biblioteker jeg har jobbet med i tillegg, for eksempel med tidslinjer (<a href="https://timeline.knightlab.com/">Knight Lab timeline.js</a>), 3D-modelleringsvisualisering (<a href="https://3dhop.net/">3DHOP</a>) og informasjonskart (<a href="https://www.amcharts.com/">amCharts</a>).</li>
-        </ul>
-        <p>I tillegg har jeg fra Saving Oseberg (Kulturhistorisk museum) en oversikt over prosjektsemesteret: <a href="documents/NOR4900_H18_ErinKristinePevanreport.pdf" target="_blank"><i>Viking Age Wood Conservation & Cultural Heritage: Project Semester with KHM Saving Oseberg Forskningsprosjekt</i></a></p>
-      </p> 
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
 
-    <br />
-    <h4>Design</h4>
-    <p>Følgende tre eksempler på nettsider fra Outland AS eies av Outland AS:</p>
-    <!-- Gallery for DESIGN -->
-    <div class="w3-row-padding" style="margin:0 -16px;">
-      <img src="images/design/ekp-artikkel-dune.png" alt="Dune artikkel" style="width:100%;max-width:300px;vertical-align:top;" />
-      <img src="images/design/ekp-artikkel-anticipated-books.png" alt="Dune artikkel" style="width:100%;max-width:300px;vertical-align:top;" />
-      <img src="images/design/ekp-artikkel-halloween.png" alt="Dune artikkel" style="width:100%;max-width:300px;vertical-align:top;" />
-    </div>
-    <!-- End DESIGN gallery -->
-
-    <br />
-    <h4>Fotografi</h4>
-    <!-- Grid for FOTOGRAFI -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="images/photos/ekp_007_port.jpg" style="width:100%">
-        <img src="images/photos/ekp_001_port.JPG" style="width:100%">
-        <img src="images/photos/ekp_006_port.JPG" style="width:100%">
-        <img src="images/photos/ekp_002_port.JPG" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="images/photos/ekp_005_port.JPG" style="width:100%">
-        <img src="images/photos/ekp_004_port.JPG" style="width:100%">
-        <img src="images/photos/ekp_003_port.JPG" style="width:100%">
-        <img src="images/photos/ekp_008_port.jpg" style="width:100%">
-      </div>
-    </div>
-    <!-- End FOTOGRAFI grid -->
-    
-    <!-- Grid for photos -----
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
-      </div>
-    </div>
-    ----- End photo grid -->
-    
-  </div>
-  <!-- End Portfolio Section -->
-  
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Ta kontakt</h2>
-    <hr style="width:400px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Oslo, Norge</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> E-post: erinkpevan[at]gmail.com</p>
-      <p><a href="https://www.linkedin.com/in/ekpevan" target="_blank"><img src="images/icons/317750_linkedin_icon_01.png" style="padding-right:20px;">LinkedIn</img></a></p>
-      <br /><br />
-      <p>&copy; 2025 Erin Kristine Pevan</p>
-    </div><br>
-  </div>
-  <!-- End Contact Section -->
-  
-  
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <!--
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  -->
- <p class="w3-small">This website was made with and is hosted by W3schools Spaces. Make your own free website today!
-   <a href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
- </p>  
- <!-- End footer -->
-</footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
+    <!-- Link to your external JavaScript file (optional) -->
+    <script src="script.js"></script>
 </body>
 </html>
-
